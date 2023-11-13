@@ -1,0 +1,105 @@
+<div class="flex" style="width: 100%; background: rgb(222,
+      53,
+      76); color: #fff; justify-content: space-evenly; font-size: 12px;" id="topRedInfoBar">
+  <div>
+    <i class="fas fa-truck" style="color: rgb(255, 255, 255);"></i> Free next day delivery
+  </div>
+  <div>
+    <i class="fas fa-recycle"></i> Free removal, recycling of old products
+  </div>
+  <div>
+    <i class="fas fa-concierge-bell"></i> 24x7 Customer support
+  </div>
+  <div>
+    <i class="fas fa-bullseye"></i> Legendary value promised
+  </div>
+  <div>
+    <i class="fas fa-language" ></i> EN
+      <i class="fas fa-chevron-down"></i>
+  </div>
+</div>
+<div class="navbar flex" id="nav">
+  <div id="toggle">
+    <img src="../../assets/menu.png" style="height: 25px;width: 25px; margin-left: 5px;" id="showMenu" (click)="toggleMenu()"
+      *ngIf="showIcon">
+    <img src="../../assets/cross.png" style="height: 25px;width: 25px; margin-left: 5px;" id="showMenu" (click)="toggleMenu()"
+      *ngIf="showCross">
+  </div>
+  <div id="brand">
+    <app-brand></app-brand>
+  </div>
+  <div class="flex" style="align-items: center;" id="nav-items">
+    <div>
+      <app-search></app-search>
+    </div>
+    <div id="nav-menu">
+      <ul class="flex">
+        <li class="showMenu" style="font-weight: 550; font-size: 14px;">Products
+          <ul class="dropdown box-shadow-15">
+            <li>Gadgets</li>
+            <li>Books</li>
+            <li>Books</li>
+            <li>Cloths</li>
+            <li>Footwear</li>
+          </ul>
+        </li>
+        <li style="font-weight: 550; color: #666;font-size: 14px;">Become an Affiliate</li>
+        <li style="font-weight: 550; color: #666;font-size: 14px;">More</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li class="showMenu" style="font-weight: 550;">
+          <i class="fas fa-user-circle"></i>
+          <ul class="profileDropdown box-shadow-15">
+            <li>My profile</li>
+            <li>Account</li>
+            <li>Security</li>
+            <li>Settings</li>
+            <li>Raise an incident</li>
+          </ul>
+      </ul>
+    </div>
+
+  </div>
+  <div id="cartIcon" style="margin-right: 20px;">
+      <i class="fas fa-shopping-cart" style="color: red;"></i>
+  </div>
+</div>
+<div id="showSearchOnResize-sm">
+  <app-search></app-search>
+</div>
+<div class="flex box-shadow-3 toggleMenu" *ngIf="toggleMenus">
+  <ul>
+    <li><p>Profile</p></li>
+    <li><p>Products</p></li>
+    <li><p>Home</p></li>
+  </ul>
+</div>
+<div class="flex sliderNavHolder box-shadow-12">
+  <div class="leftArr">
+    <i class="fas fa-chevron-left"></i>
+  </div>
+  <div class="scrollContent">
+    <ul class="flex fs-200 slider-nav" style="color: #fff;">
+      <li class="active">All</li>
+      <li>Electronics</li>
+      <li>TV & Entertainment</li>
+      <li>Men</li>
+      <li>Women</li>
+      <li>Boys</li>
+      <li>Girls</li>
+      <li>Pets</li>
+      <li>Home & Furniture</li>
+      <li>Grooming</li>
+      <li>Fitness</li>
+      <li>Medicines</li>
+      <li>Books</li>
+      <li>Coupons</li>
+      <li>Offer Zone</li>
+    </ul>
+  </div>
+  <div class="rightArr">
+    <i class="fas fa-chevron-right"></i>
+  </div>
+</div>

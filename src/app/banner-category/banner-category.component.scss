@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Caveat&family=M+PLUS+Rounded+1c:wght@300&display=swap');
+.bannerCard{
+  height: 250px;
+  width: 350px;
+  background: #ffffff;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+
+}
+.offer{
+  font-family:'Caveat',cursive;
+}
+.bgRed{
+  border: 1px solid #fa443a;
+}
+.blue{
+  background: blue;
+}
+.orange{
+  background: orange;
+}
+.yellow{
+  background: #FFC436;
+}
+.green{
+  background: green;;
+}
+.red{
+  background: rgb(222,
+    53,
+    76);
+}
+.categoryItem{
+    font-weight: 800;
+    color: white;
+    width: 85px;
+    border-radius: 10px;
+    text-align: center;
+}
+#cardBannerHolder{
+  overflow-x: scroll;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  margin-top: 40px;
+  padding: 10px;
+}
+#cardBannerHolder::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+
+  .bannerCard {
+      height: auto;
+      max-width: 300px;
+      padding: 10px 25px;
+
+    }
+    .bannerCard div{
+      min-width: 0;
+    }
+    #cardBannerLeft{
+      max-width: 160px;
+      overflow-wrap: break-word !important;
+    }
+    #cardBannerLeft p{
+
+    }
+    .bannerCard h4{
+      font-size: 13px;
+    }
+    .categoryItem{
+      width: 50px;
+      border-radius: 4px;
+      padding: 1px 5px;
+    }
+    .bannerCard h3{
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .bannerCard p{
+      font-size: 12px;
+
+    }
+    #bannerCardImg{
+      order: 1;
+
+    }
+    #bannerCardImg{
+      height: 60px;
+      width: 60px;
+    }
+}

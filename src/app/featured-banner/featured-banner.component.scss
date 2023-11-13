@@ -1,0 +1,8 @@
+.product{
+  filter: drop-shadow(5px 5px 15px rgb(244, 244, 244));
+}
+.wavy{
+  background-color: #e5e5f7;
+  opacity: 0.9;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #f7e5e5 10px), repeating-linear-gradient(#f7624455, #f74444);
+}

@@ -1,0 +1,88 @@
+.msg-img {
+ color: #888;
+ margin-bottom: -15px;
+}
+
+.msg-bubble {
+  max-width: 340px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ddd;
+}
+
+.msg-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.msg-info-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.msg-info-time {
+  font-size: 0.85em;
+}
+
+.left-msg .msg-bubble {
+  border-bottom-left-radius: 0;
+}
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+.msg-text{
+  font-size: 13px;
+}
+
+.msg:last-of-type {
+  margin: 0;
+}
+
+.right-msg {
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+
+.right-msg .msg-bubble {
+  max-width: 340px;
+  background: #ffd3d3;
+  color: #4f4343;
+  border-bottom-right-radius: 0;
+}
+
+.right-msg .msg-img {
+  margin: 0 0 -15px 4px;
+}
+.msger-chat::-webkit-scrollbar {
+  width: 6px;
+}
+
+.msger-chat::-webkit-scrollbar-track {
+  background: #e3e3e3;
+}
+
+.msger-chat::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.chatboxActive {
+
+  -webkit-animation-name: animateBottom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateBottom;
+  animation-duration: 0.4s;
+}
+@keyframes animateBottom {
+  from {
+    bottom: 0px;
+    opacity: 0;
+  }
+  to {
+    bottom: 10px;
+    opacity: 1;
+  }
+}

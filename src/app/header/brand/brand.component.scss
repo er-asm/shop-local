@@ -1,0 +1,18 @@
+#brandLogo{
+
+}
+#brandName{
+  font-family: 'Barlow Condensed', 'Bellefair', 'M PLUS Rounded 1c', sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  #brandLogo {
+   height: 30px;
+   width: 50px;
+
+  }
+  #brandName{
+    font-size: 25px;
+    margin-left: 8px;
+  }
+
+}

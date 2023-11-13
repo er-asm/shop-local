@@ -1,0 +1,58 @@
+<app-header></app-header>
+<app-slider></app-slider>
+<app-banner-category></app-banner-category>
+<app-today-top-products></app-today-top-products>
+<app-featured-banner></app-featured-banner>
+<app-last-viewed></app-last-viewed>
+<div style="height: 50px;width: 50px; position: fixed;bottom: 10px;right: 0;z-index: 1; color: white; padding: 13px; cursor: pointer;border-radius: 100%;" class="box-shadow-12 chatboxActive red-bg " *ngIf="showChatBoxBubble" (click)="closeChatBox()">
+  <i class="fas fa-comment-alt" style="font-size: 25px;"></i>
+</div>
+<div style="height: 350px; width: 300px; position: fixed;bottom: 0;right: 0;z-index: 1; background: white;" class="box-shadow-15 chatboxActive" *ngIf="showChatBox">
+  <div style="height: 40px;top: 0;background: #eee;color: #666;justify-content: center;align-items: center; padding-inline: 8px;" class="flex box-shadow-5">
+    <div class="msger-header-title">
+      <img src="../../assets/header/logo.png" style="height: 30px;width: 45px;">
+    </div>
+    <div class="msger-header-options" style="margin-left: auto; cursor: pointer;">
+      <span (click)="closeChatBox()"><i class="fas fa-times"></i></span>
+    </div>
+  </div>
+  <div style="flex: 1;overflow-y: scroll;padding: 6px;" class="msger-chat">
+    <div class="msg left-msg">
+      <div class="msg-img" style="height: 35px;width: 35px;">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">BOT</div>
+          <div class="msg-info-time">12:45</div>
+        </div>
+        <div class="msg-text">
+          Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
+        </div>
+      </div>
+    </div>
+
+    <div class="msg right-msg">
+      <div class="msg-img" style="height: 35px;width: 35px;">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">BOT</div>
+          <div class="msg-info-time">12:45</div>
+        </div>
+        <div class="msg-text">
+          Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="bottom: 0;position: absolute;padding: 5px; background: #eee;" class="flex">
+    <input type="textarea" col="2" row="1" style="width: 255px; border: 1px solid rgb(255, 251, 251);font-size: 14px;height: 40px; border-top-left-radius: 3px;border-bottom-left-radius: 3px;" placeholder="Enter text here...">
+    <button class="button red-button" style="height: 40px;margin-left: -15px;border-top-right-radius: 3px;border-bottom-right-radius: 3px;">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+
+</div>
