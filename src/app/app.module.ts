@@ -12,6 +12,7 @@ import { BannerCategoryComponent } from './banner-category/banner-category.compo
 import { TodayTopProductsComponent } from './today-top-products/today-top-products.component';
 import { FeaturedBannerComponent } from './featured-banner/featured-banner.component';
 import { LastViewedComponent } from './last-viewed/last-viewed.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LastViewedComponent } from './last-viewed/last-viewed.component';
     BannerCategoryComponent,
     TodayTopProductsComponent,
     FeaturedBannerComponent,
-    LastViewedComponent
+    LastViewedComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

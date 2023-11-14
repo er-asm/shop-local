@@ -1,41 +1,122 @@
-.slider{
-overflow-x: hidden;
+#top-deals-banner{
+overflow-x: scroll;
 user-select: none;
 cursor: default;
 justify-content: space-between;
 }
-.slider::-webkit-scrollbar {
+#top-deals-banner::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
-.slider-track {
+#top-products-holder{
+  background: #f5f5f5;
+  align-items: center;
+  padding: 10px;
+  overflow-x: scroll;
+}
+#top-products-holder::-webkit-scrollbar{
+  display: none;
+}
+.top-prods{
+  height: 220px;
+  max-width: 200px;
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #efefef;
+  flex-direction: column;
+  align-items: center;
+  gap: unset;
 
+
+}
+#product_img {
+  height: 100px;
+  width: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+#product_img > img{
+  max-width: 100%;
+  max-height: 100%;
+}
+#prod_price>p{
+  font-size: 17px;
+}
+.top-prods > div > span {
+  background: red;
+  border-radius: 3px;
+  height: 16px;
+  padding: 10px;
+  font-size: 13px;
+  align-items: center;
+  display: flex;
+
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  color: white;
+}
+#prod_name> p{
+  font-size: 1rem;
+
+}
+#add_fav_btn>button{
+  border-radius: 4px;
+  font-size: 13px;
+  color: white;
+  padding: 3px 8px;
+  border: 1px solid red;
+  margin-top: 5px;
+}
+.prod_rating {
+  font-size: 10px;
+  color: orange;
+  gap: unset;
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #ffc0c0;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin-bottom: 13px;
+.prod_rating>i {
+  padding: 2px;
 }
 
-.dot:hover {
-  background-color: red;
+@media (max-width:768px){
+#top-deals-banner{
+  height: 120px;
 }
+#top-products-holder{
+  padding: 5px;
 
-.viewAllLink{
-  text-decoration: underline;
+}
+#prod_price>p{
   font-size: 14px;
-  color: #666;
 }
-.viewAllLink:hover{
-  color: red;
+.top-prods{
+  height: 210px;
+  width: 150px;
+}
+#product_img > img{
+
+}
+.top-prods > div > span{
+
+  height: 15px;
+  font-weight: 600;
+}
+#prod_name>p {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+#add_fav_btn>button {
+  border-radius: 4px;
+  font-size: 13px;
+  color: white;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  margin-top: 5px;
+}
 }
