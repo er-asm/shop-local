@@ -1,9 +1,19 @@
-<div class="container-hd flex" style="align-items: center; margin-top: 20px;">
-  <div>
-    <button onclick="prevSlide()" class="button red-button"><i class="fas fa-chevron-left"></i></button>
-  </div>
-  <div>
-    <img src="assets/sider/slider-2.jpg">
-  </div>
-  <div><button onclick="nextSlide()" class="button red-button"><i class="fas fa-chevron-right"></i></button></div>
+
+<div  style="align-items: center; margin-top: 20px; position: relative;" class="flex">
+    <div>
+      <button (click)="prevSlide()" class="button red-button"><i class="fas fa-chevron-left"></i></button>
+    </div>
+      <div id="sliderImage" [@linearAnimation]="currentImageIndex" class="slider-image-container flex">
+          <img *ngFor="let img of sliderImages;let i=index;" [src]="img" [class.active]="i === currentImageIndex"
+            id="sliderImg">
+        </div>
+        <div class="flex slider-dot-container">
+          <div class="dot" *ngFor="let image of sliderImages; let i = index" class="dot"
+            [class.active]="i === currentImageIndex" (click)="selectImage(i)"></div>
+        </div>
+      <div>
+        <button (click)="nextSlide()" class="button red-button"><i class="fas fa-chevron-right"></i></button>
+      </div>
 </div>
+
+

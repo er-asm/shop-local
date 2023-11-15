@@ -13,6 +13,7 @@ import { TodayTopProductsComponent } from './today-top-products/today-top-produc
 import { FeaturedBannerComponent } from './featured-banner/featured-banner.component';
 import { LastViewedComponent } from './last-viewed/last-viewed.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
